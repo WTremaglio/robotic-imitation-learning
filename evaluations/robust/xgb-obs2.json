@@ -1,0 +1,953 @@
+{
+  "settings": {
+    "policy": "v2-12-xgb/s0,v2-12-xgb/s1,v2-12-xgb/s2",
+    "seed": 6000,
+    "episodes": 100,
+    "ranges": {
+      "base_radius": 0.5,
+      "target_radius": [
+        0.6,
+        1.6
+      ],
+      "target_height": [
+        0.3,
+        1.0
+      ]
+    },
+    "criteria": {
+      "reach_tolerance": 0.01,
+      "max_steps": 40000,
+      "min_time": 8.0,
+      "stall_window": 3.0,
+      "stall_improvement": 0.002
+    },
+    "finger_angles": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "perturbation": {
+      "obs_noise": 0.002,
+      "cmd_noise": 0.0,
+      "push_speed": 0.0,
+      "push_time": 2.0
+    }
+  },
+  "summary": {
+    "episodes": 100,
+    "reached": 100,
+    "close": 100,
+    "parked": 100,
+    "late": 14,
+    "median_error": 0.0033509544311086078,
+    "mean_reach_time": 6.421360000000368,
+    "mean_park_time": 4.2007999999999734,
+    "decision_time": 0.012846249169670046
+  },
+  "seconds": 257.02690687507857,
+  "outcomes": [
+    {
+      "seed": 6000,
+      "reached": true,
+      "final_error": 0.0030958405559697883,
+      "time": 8.000000000001005,
+      "park_time": 4.609999999999874,
+      "reach_time": 6.585000000000534,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6001,
+      "reached": true,
+      "final_error": 0.0017582057823211689,
+      "time": 8.000000000001005,
+      "park_time": 4.509999999999841,
+      "reach_time": 7.044000000000687,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6002,
+      "reached": true,
+      "final_error": 0.0017981451351506584,
+      "time": 8.000000000001005,
+      "park_time": 4.4999999999998375,
+      "reach_time": 6.565000000000527,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6003,
+      "reached": true,
+      "final_error": 0.009990360046464641,
+      "time": 8.24500000000087,
+      "park_time": 5.790000000000268,
+      "reach_time": 8.24500000000087,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.25 s"
+    },
+    {
+      "seed": 6004,
+      "reached": true,
+      "final_error": 0.0017876525925292909,
+      "time": 8.000000000001005,
+      "park_time": 4.159999999999724,
+      "reach_time": 6.507000000000508,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6005,
+      "reached": true,
+      "final_error": 0.0037853073714038355,
+      "time": 8.000000000001005,
+      "park_time": 5.280000000000098,
+      "reach_time": 7.354000000000791,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6006,
+      "reached": true,
+      "final_error": 0.0025135579621174153,
+      "time": 8.000000000001005,
+      "park_time": 3.9799999999996727,
+      "reach_time": 6.951000000000656,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6007,
+      "reached": true,
+      "final_error": 0.004171339520368636,
+      "time": 8.000000000001005,
+      "park_time": 4.349999999999787,
+      "reach_time": 6.69400000000057,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6008,
+      "reached": true,
+      "final_error": 0.0036319578361628064,
+      "time": 8.000000000001005,
+      "park_time": 3.6899999999997046,
+      "reach_time": 5.493000000000169,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6009,
+      "reached": true,
+      "final_error": 0.00220232391172049,
+      "time": 8.000000000001005,
+      "park_time": 4.579999999999864,
+      "reach_time": 6.72300000000058,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6010,
+      "reached": true,
+      "final_error": 0.009983519776864045,
+      "time": 9.955999999999921,
+      "park_time": 8.170000000000911,
+      "reach_time": 9.955999999999921,
+      "stop_message": "Target reached within 10 mm tolerance at t=9.96 s"
+    },
+    {
+      "seed": 6011,
+      "reached": true,
+      "final_error": 0.0035106392540957803,
+      "time": 8.000000000001005,
+      "park_time": 4.249999999999754,
+      "reach_time": 6.264000000000427,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6012,
+      "reached": true,
+      "final_error": 0.0007218755227625609,
+      "time": 8.000000000001005,
+      "park_time": 1.3399999999999632,
+      "reach_time": 3.8529999999996867,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6013,
+      "reached": true,
+      "final_error": 0.000653390536822453,
+      "time": 8.000000000001005,
+      "park_time": 3.539999999999721,
+      "reach_time": 6.238000000000418,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6014,
+      "reached": true,
+      "final_error": 0.004987966537325387,
+      "time": 8.000000000001005,
+      "park_time": 3.659999999999708,
+      "reach_time": 5.79600000000027,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6015,
+      "reached": true,
+      "final_error": 0.009991351528536417,
+      "time": 9.846999999999982,
+      "park_time": 7.930000000000983,
+      "reach_time": 9.846999999999982,
+      "stop_message": "Target reached within 10 mm tolerance at t=9.85 s"
+    },
+    {
+      "seed": 6016,
+      "reached": true,
+      "final_error": 0.0024780902740983678,
+      "time": 8.000000000001005,
+      "park_time": 4.909999999999974,
+      "reach_time": 6.75300000000059,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6017,
+      "reached": true,
+      "final_error": 0.0050213837891159565,
+      "time": 8.000000000001005,
+      "park_time": 1.949999999999896,
+      "reach_time": 4.994000000000002,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6018,
+      "reached": true,
+      "final_error": 0.00257080522980465,
+      "time": 8.000000000001005,
+      "park_time": 4.699999999999904,
+      "reach_time": 6.661000000000559,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6019,
+      "reached": true,
+      "final_error": 0.0026498157037971788,
+      "time": 8.000000000001005,
+      "park_time": 4.939999999999984,
+      "reach_time": 7.070000000000696,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6020,
+      "reached": true,
+      "final_error": 0.0032620172062051696,
+      "time": 8.000000000001005,
+      "park_time": 2.6299999999998214,
+      "reach_time": 5.265000000000093,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6021,
+      "reached": true,
+      "final_error": 0.0005789210270303579,
+      "time": 8.000000000001005,
+      "park_time": 3.739999999999699,
+      "reach_time": 5.67600000000023,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6022,
+      "reached": true,
+      "final_error": 0.00033948681147565827,
+      "time": 8.000000000001005,
+      "park_time": 2.1099999999998786,
+      "reach_time": 4.389999999999801,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6023,
+      "reached": true,
+      "final_error": 0.009996895492775852,
+      "time": 8.772000000000578,
+      "park_time": 6.570000000000529,
+      "reach_time": 8.772000000000578,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.77 s"
+    },
+    {
+      "seed": 6024,
+      "reached": true,
+      "final_error": 0.0036291671751311487,
+      "time": 8.000000000001005,
+      "park_time": 5.170000000000061,
+      "reach_time": 7.157000000000725,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6025,
+      "reached": true,
+      "final_error": 0.0058763174491411095,
+      "time": 8.000000000001005,
+      "park_time": 5.520000000000178,
+      "reach_time": 7.611000000000876,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6026,
+      "reached": true,
+      "final_error": 0.002734697228146934,
+      "time": 8.000000000001005,
+      "park_time": 2.7399999999998093,
+      "reach_time": 4.600999999999871,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6027,
+      "reached": true,
+      "final_error": 0.0023516471490722516,
+      "time": 8.000000000001005,
+      "park_time": 2.7099999999998126,
+      "reach_time": 4.693999999999902,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6028,
+      "reached": true,
+      "final_error": 0.0005110478950605078,
+      "time": 8.000000000001005,
+      "park_time": 3.4099999999997355,
+      "reach_time": 5.142000000000052,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6029,
+      "reached": true,
+      "final_error": 0.0005401666823093876,
+      "time": 8.000000000001005,
+      "park_time": 2.179999999999871,
+      "reach_time": 4.578999999999864,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6030,
+      "reached": true,
+      "final_error": 0.007373029942005735,
+      "time": 8.000000000001005,
+      "park_time": 5.230000000000081,
+      "reach_time": 7.691000000000903,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6031,
+      "reached": true,
+      "final_error": 0.001165141909999865,
+      "time": 8.000000000001005,
+      "park_time": 1.9199999999998993,
+      "reach_time": 4.579999999999864,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6032,
+      "reached": true,
+      "final_error": 0.007284262713836659,
+      "time": 8.000000000001005,
+      "park_time": 3.4099999999997355,
+      "reach_time": 5.419000000000144,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6033,
+      "reached": true,
+      "final_error": 0.009987944684213684,
+      "time": 8.990000000000457,
+      "park_time": 7.200000000000739,
+      "reach_time": 8.990000000000457,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.99 s"
+    },
+    {
+      "seed": 6034,
+      "reached": true,
+      "final_error": 0.006186878230938986,
+      "time": 8.000000000001005,
+      "park_time": 2.3399999999998533,
+      "reach_time": 4.6109999999998745,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6035,
+      "reached": true,
+      "final_error": 0.0030625484027930697,
+      "time": 8.000000000001005,
+      "park_time": 3.179999999999761,
+      "reach_time": 5.140000000000051,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6036,
+      "reached": true,
+      "final_error": 0.008220121027930745,
+      "time": 8.000000000001005,
+      "park_time": 5.290000000000101,
+      "reach_time": 7.885000000000968,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6037,
+      "reached": true,
+      "final_error": 0.005179452671028693,
+      "time": 8.000000000001005,
+      "park_time": 4.639999999999884,
+      "reach_time": 7.610000000000876,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6038,
+      "reached": true,
+      "final_error": 0.005631091799737636,
+      "time": 8.000000000001005,
+      "park_time": 2.579999999999827,
+      "reach_time": 5.637000000000217,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6039,
+      "reached": true,
+      "final_error": 0.002095078337012977,
+      "time": 8.000000000001005,
+      "park_time": 2.8099999999998015,
+      "reach_time": 5.337000000000117,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6040,
+      "reached": true,
+      "final_error": 0.00049631755323563,
+      "time": 8.000000000001005,
+      "park_time": 3.0299999999997773,
+      "reach_time": 5.206000000000073,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6041,
+      "reached": true,
+      "final_error": 0.008668893032936591,
+      "time": 8.000000000001005,
+      "park_time": 2.489999999999837,
+      "reach_time": 4.451999999999821,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6042,
+      "reached": true,
+      "final_error": 0.004849262742655267,
+      "time": 8.000000000001005,
+      "park_time": 5.280000000000098,
+      "reach_time": 7.260000000000759,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6043,
+      "reached": true,
+      "final_error": 0.0016933036607130684,
+      "time": 8.000000000001005,
+      "park_time": 2.9899999999997817,
+      "reach_time": 6.350000000000455,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6044,
+      "reached": true,
+      "final_error": 0.0014898645083952747,
+      "time": 8.000000000001005,
+      "park_time": 3.869999999999685,
+      "reach_time": 6.751000000000589,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6045,
+      "reached": true,
+      "final_error": 0.008349145707830049,
+      "time": 8.000000000001005,
+      "park_time": 0.9200000000000007,
+      "reach_time": 3.2939999999997482,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6046,
+      "reached": true,
+      "final_error": 0.009997276075823906,
+      "time": 8.527000000000713,
+      "park_time": 6.340000000000452,
+      "reach_time": 8.527000000000713,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.53 s"
+    },
+    {
+      "seed": 6047,
+      "reached": true,
+      "final_error": 0.008590417318433225,
+      "time": 8.000000000001005,
+      "park_time": 2.289999999999859,
+      "reach_time": 4.142999999999718,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6048,
+      "reached": true,
+      "final_error": 0.002151972414804123,
+      "time": 8.000000000001005,
+      "park_time": 2.849999999999797,
+      "reach_time": 5.004000000000006,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6049,
+      "reached": true,
+      "final_error": 0.00039304589267825067,
+      "time": 8.000000000001005,
+      "park_time": 1.6699999999999269,
+      "reach_time": 3.9629999999996746,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6050,
+      "reached": true,
+      "final_error": 0.0026042891183310495,
+      "time": 8.000000000001005,
+      "park_time": 5.470000000000161,
+      "reach_time": 7.307000000000775,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6051,
+      "reached": true,
+      "final_error": 0.002372507616540516,
+      "time": 8.000000000001005,
+      "park_time": 3.149999999999764,
+      "reach_time": 5.19700000000007,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6052,
+      "reached": true,
+      "final_error": 0.007892533312612767,
+      "time": 8.000000000001005,
+      "park_time": 5.310000000000108,
+      "reach_time": 7.649000000000889,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6053,
+      "reached": true,
+      "final_error": 0.0009384392647038445,
+      "time": 8.000000000001005,
+      "park_time": 4.339999999999784,
+      "reach_time": 6.205000000000407,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6054,
+      "reached": true,
+      "final_error": 0.00339032547330273,
+      "time": 8.000000000001005,
+      "park_time": 4.049999999999687,
+      "reach_time": 6.2250000000004135,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6055,
+      "reached": true,
+      "final_error": 0.00999226408441245,
+      "time": 9.303000000000283,
+      "park_time": 7.500000000000839,
+      "reach_time": 9.303000000000283,
+      "stop_message": "Target reached within 10 mm tolerance at t=9.30 s"
+    },
+    {
+      "seed": 6056,
+      "reached": true,
+      "final_error": 0.009980281822460135,
+      "time": 8.105000000000947,
+      "park_time": 5.7100000000002415,
+      "reach_time": 8.105000000000947,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.11 s"
+    },
+    {
+      "seed": 6057,
+      "reached": true,
+      "final_error": 0.00999594696630899,
+      "time": 8.878000000000519,
+      "park_time": 6.580000000000532,
+      "reach_time": 8.878000000000519,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.88 s"
+    },
+    {
+      "seed": 6058,
+      "reached": true,
+      "final_error": 0.0020542785031411053,
+      "time": 8.000000000001005,
+      "park_time": 4.269999999999761,
+      "reach_time": 6.203000000000406,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6059,
+      "reached": true,
+      "final_error": 0.0041676395347307015,
+      "time": 8.000000000001005,
+      "park_time": 5.460000000000158,
+      "reach_time": 7.427000000000815,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6060,
+      "reached": true,
+      "final_error": 0.001586721856501059,
+      "time": 8.000000000001005,
+      "park_time": 4.009999999999674,
+      "reach_time": 6.181000000000399,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6061,
+      "reached": true,
+      "final_error": 0.0033115833889144856,
+      "time": 8.000000000001005,
+      "park_time": 2.569999999999828,
+      "reach_time": 4.6169999999998765,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6062,
+      "reached": true,
+      "final_error": 0.009190863488342678,
+      "time": 8.000000000001005,
+      "park_time": 5.910000000000308,
+      "reach_time": 7.945000000000988,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6063,
+      "reached": true,
+      "final_error": 0.0014275860693633575,
+      "time": 8.000000000001005,
+      "park_time": 2.9099999999997905,
+      "reach_time": 4.698999999999904,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6064,
+      "reached": true,
+      "final_error": 0.009986787315874178,
+      "time": 9.144000000000371,
+      "park_time": 6.160000000000392,
+      "reach_time": 9.144000000000371,
+      "stop_message": "Target reached within 10 mm tolerance at t=9.14 s"
+    },
+    {
+      "seed": 6065,
+      "reached": true,
+      "final_error": 0.002718786844125802,
+      "time": 8.000000000001005,
+      "park_time": 4.019999999999677,
+      "reach_time": 6.563000000000526,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6066,
+      "reached": true,
+      "final_error": 0.004529971948018539,
+      "time": 8.000000000001005,
+      "park_time": 0.8800000000000007,
+      "reach_time": 4.608999999999874,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6067,
+      "reached": true,
+      "final_error": 0.009994042072020749,
+      "time": 9.534000000000155,
+      "park_time": 7.350000000000789,
+      "reach_time": 9.534000000000155,
+      "stop_message": "Target reached within 10 mm tolerance at t=9.53 s"
+    },
+    {
+      "seed": 6068,
+      "reached": true,
+      "final_error": 0.005721798151176702,
+      "time": 8.000000000001005,
+      "park_time": 4.689999999999901,
+      "reach_time": 7.659000000000892,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6069,
+      "reached": true,
+      "final_error": 0.0023761551820196823,
+      "time": 8.000000000001005,
+      "park_time": 4.419999999999811,
+      "reach_time": 6.462000000000493,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6070,
+      "reached": true,
+      "final_error": 0.009488467923826974,
+      "time": 8.000000000001005,
+      "park_time": 6.000000000000338,
+      "reach_time": 7.968000000000996,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6071,
+      "reached": true,
+      "final_error": 0.00047307657816099267,
+      "time": 8.000000000001005,
+      "park_time": 2.489999999999837,
+      "reach_time": 5.366000000000127,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6072,
+      "reached": true,
+      "final_error": 0.000717617344276229,
+      "time": 8.000000000001005,
+      "park_time": 1.8799999999999037,
+      "reach_time": 3.7279999999997004,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6073,
+      "reached": true,
+      "final_error": 0.009988298486641026,
+      "time": 9.534000000000155,
+      "park_time": 7.170000000000729,
+      "reach_time": 9.534000000000155,
+      "stop_message": "Target reached within 10 mm tolerance at t=9.53 s"
+    },
+    {
+      "seed": 6074,
+      "reached": true,
+      "final_error": 0.0010779716460875863,
+      "time": 8.000000000001005,
+      "park_time": 2.3399999999998533,
+      "reach_time": 4.134999999999716,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6075,
+      "reached": true,
+      "final_error": 0.002404925151830022,
+      "time": 8.000000000001005,
+      "park_time": 3.159999999999763,
+      "reach_time": 5.094000000000036,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6076,
+      "reached": true,
+      "final_error": 0.004132218843882986,
+      "time": 8.000000000001005,
+      "park_time": 2.089999999999881,
+      "reach_time": 4.74799999999992,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6077,
+      "reached": true,
+      "final_error": 0.00999507051173654,
+      "time": 8.257000000000863,
+      "park_time": 6.110000000000375,
+      "reach_time": 8.257000000000863,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.26 s"
+    },
+    {
+      "seed": 6078,
+      "reached": true,
+      "final_error": 0.0028774414033112122,
+      "time": 8.000000000001005,
+      "park_time": 4.939999999999984,
+      "reach_time": 6.828000000000615,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6079,
+      "reached": true,
+      "final_error": 0.005026465469374007,
+      "time": 8.000000000001005,
+      "park_time": 3.059999999999774,
+      "reach_time": 5.1440000000000525,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6080,
+      "reached": true,
+      "final_error": 0.0023642569842465813,
+      "time": 8.000000000001005,
+      "park_time": 4.459999999999824,
+      "reach_time": 6.420000000000479,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6081,
+      "reached": true,
+      "final_error": 0.0035996143820655933,
+      "time": 8.000000000001005,
+      "park_time": 5.260000000000091,
+      "reach_time": 7.398000000000805,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6082,
+      "reached": true,
+      "final_error": 0.006523664248859241,
+      "time": 8.000000000001005,
+      "park_time": 5.660000000000225,
+      "reach_time": 7.732000000000917,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6083,
+      "reached": true,
+      "final_error": 0.003430882490161906,
+      "time": 8.000000000001005,
+      "park_time": 4.4999999999998375,
+      "reach_time": 6.302000000000439,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6084,
+      "reached": true,
+      "final_error": 0.002731315660928614,
+      "time": 8.000000000001005,
+      "park_time": 4.759999999999924,
+      "reach_time": 6.7220000000005795,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6085,
+      "reached": true,
+      "final_error": 0.004987839107903747,
+      "time": 8.000000000001005,
+      "park_time": 4.439999999999817,
+      "reach_time": 6.564000000000527,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6086,
+      "reached": true,
+      "final_error": 0.009999895578665754,
+      "time": 8.143000000000926,
+      "park_time": 5.210000000000075,
+      "reach_time": 8.143000000000926,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.14 s"
+    },
+    {
+      "seed": 6087,
+      "reached": true,
+      "final_error": 0.003093601079722274,
+      "time": 8.000000000001005,
+      "park_time": 3.969999999999674,
+      "reach_time": 5.887000000000301,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6088,
+      "reached": true,
+      "final_error": 0.0025318422694095726,
+      "time": 8.000000000001005,
+      "park_time": 2.6299999999998214,
+      "reach_time": 5.003000000000005,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6089,
+      "reached": true,
+      "final_error": 0.0008782316420711948,
+      "time": 8.000000000001005,
+      "park_time": 5.170000000000061,
+      "reach_time": 6.975000000000664,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6090,
+      "reached": true,
+      "final_error": 0.0008132718914475581,
+      "time": 8.000000000001005,
+      "park_time": 3.8199999999996903,
+      "reach_time": 5.5990000000002045,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6091,
+      "reached": true,
+      "final_error": 0.0010736898965860253,
+      "time": 8.000000000001005,
+      "park_time": 2.7299999999998104,
+      "reach_time": 4.473999999999829,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6092,
+      "reached": true,
+      "final_error": 0.0020553891228892287,
+      "time": 8.000000000001005,
+      "park_time": 3.45999999999973,
+      "reach_time": 5.374000000000129,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6093,
+      "reached": true,
+      "final_error": 0.0037227366836641027,
+      "time": 8.000000000001005,
+      "park_time": 5.190000000000068,
+      "reach_time": 7.272000000000763,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6094,
+      "reached": true,
+      "final_error": 0.0025127542480196125,
+      "time": 8.000000000001005,
+      "park_time": 4.459999999999824,
+      "reach_time": 6.302000000000439,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6095,
+      "reached": true,
+      "final_error": 0.004595985675316438,
+      "time": 8.000000000001005,
+      "park_time": 5.300000000000105,
+      "reach_time": 7.266000000000761,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6096,
+      "reached": true,
+      "final_error": 0.003692554336874005,
+      "time": 8.000000000001005,
+      "park_time": 5.630000000000215,
+      "reach_time": 7.426000000000815,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6097,
+      "reached": true,
+      "final_error": 0.0035143559884293256,
+      "time": 8.000000000001005,
+      "park_time": 3.63999999999971,
+      "reach_time": 6.6860000000005675,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6098,
+      "reached": true,
+      "final_error": 0.002727818538826131,
+      "time": 8.000000000001005,
+      "park_time": 3.6899999999997046,
+      "reach_time": 6.524000000000513,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    },
+    {
+      "seed": 6099,
+      "reached": true,
+      "final_error": 0.0037778036007594536,
+      "time": 8.000000000001005,
+      "park_time": 4.149999999999721,
+      "reach_time": 6.023000000000346,
+      "stop_message": "Target reached within 10 mm tolerance at t=8.00 s"
+    }
+  ]
+}

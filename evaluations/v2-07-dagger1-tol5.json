@@ -1,0 +1,947 @@
+{
+  "settings": {
+    "policy": "v2-07-dagger1/s0,v2-07-dagger1/s1,v2-07-dagger1/s2",
+    "seed": 1000,
+    "episodes": 100,
+    "ranges": {
+      "base_radius": 0.5,
+      "target_radius": [
+        0.6,
+        1.6
+      ],
+      "target_height": [
+        0.3,
+        1.0
+      ]
+    },
+    "criteria": {
+      "reach_tolerance": 0.005,
+      "max_steps": 40000,
+      "min_time": 8.0,
+      "stall_window": 3.0,
+      "stall_improvement": 0.002
+    },
+    "finger_angles": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ]
+  },
+  "summary": {
+    "episodes": 100,
+    "reached": 30,
+    "close": 89,
+    "parked": 100,
+    "late": 19,
+    "median_error": 0.010820148227096486,
+    "mean_reach_time": 8.298066666666976,
+    "mean_park_time": 3.821499999999959,
+    "decision_time": 4.055624944157899e-05
+  },
+  "seconds": 22.98689825006295,
+  "outcomes": [
+    {
+      "seed": 1000,
+      "reached": true,
+      "final_error": 0.0037029644799124006,
+      "time": 8.000000000001005,
+      "park_time": 6.440000000000485,
+      "reach_time": 7.95100000000099,
+      "stop_message": "Target reached within 5mm tolerance at t=8.00s!"
+    },
+    {
+      "seed": 1001,
+      "reached": false,
+      "final_error": 0.008807176785746407,
+      "time": 11.439999999999099,
+      "park_time": 3.8199999999996903,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=11.44s (best EE error 0.0092 m, current 0.0088 m)"
+    },
+    {
+      "seed": 1002,
+      "reached": false,
+      "final_error": 0.008776752945834666,
+      "time": 9.690000000000069,
+      "park_time": 4.309999999999774,
+      "reach_time": 6.346000000000454,
+      "stop_message": "Target not reachable: closest pose reached at t=9.69s (best EE error 0.0046 m, current 0.0088 m)"
+    },
+    {
+      "seed": 1003,
+      "reached": false,
+      "final_error": 0.010926718327349394,
+      "time": 8.127000000000935,
+      "park_time": 3.3099999999997465,
+      "reach_time": 4.970999999999995,
+      "stop_message": "Target not reachable: closest pose reached at t=8.13s (best EE error 0.0019 m, current 0.0109 m)"
+    },
+    {
+      "seed": 1004,
+      "reached": false,
+      "final_error": 0.015001860448667378,
+      "time": 10.381999999999685,
+      "park_time": 5.360000000000125,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=10.38s (best EE error 0.0064 m, current 0.0150 m)"
+    },
+    {
+      "seed": 1005,
+      "reached": false,
+      "final_error": 0.018401885988811657,
+      "time": 8.819000000000552,
+      "park_time": 3.969999999999674,
+      "reach_time": 5.720000000000245,
+      "stop_message": "Target not reachable: closest pose reached at t=8.82s (best EE error 0.0027 m, current 0.0184 m)"
+    },
+    {
+      "seed": 1006,
+      "reached": false,
+      "final_error": 0.005503318369043166,
+      "time": 10.366999999999694,
+      "park_time": 4.849999999999954,
+      "reach_time": 7.380000000000799,
+      "stop_message": "Target not reachable: closest pose reached at t=10.37s (best EE error 0.0050 m, current 0.0055 m)"
+    },
+    {
+      "seed": 1007,
+      "reached": false,
+      "final_error": 0.011295394290618417,
+      "time": 8.47900000000074,
+      "park_time": 3.1099999999997685,
+      "reach_time": 5.31600000000011,
+      "stop_message": "Target not reachable: closest pose reached at t=8.48s (best EE error 0.0025 m, current 0.0113 m)"
+    },
+    {
+      "seed": 1008,
+      "reached": true,
+      "final_error": 0.004717269922913052,
+      "time": 8.000000000001005,
+      "park_time": 4.749999999999921,
+      "reach_time": 6.727000000000581,
+      "stop_message": "Target reached within 5mm tolerance at t=8.00s!"
+    },
+    {
+      "seed": 1009,
+      "reached": false,
+      "final_error": 0.022040244530061894,
+      "time": 9.32700000000027,
+      "park_time": 3.8799999999996837,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=9.33s (best EE error 0.0103 m, current 0.0220 m)"
+    },
+    {
+      "seed": 1010,
+      "reached": false,
+      "final_error": 0.015995790244917825,
+      "time": 9.967999999999915,
+      "park_time": 4.5599999999998575,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=9.97s (best EE error 0.0112 m, current 0.0160 m)"
+    },
+    {
+      "seed": 1011,
+      "reached": false,
+      "final_error": 0.009656793043897707,
+      "time": 9.485000000000182,
+      "park_time": 4.6199999999998775,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=9.49s (best EE error 0.0059 m, current 0.0097 m)"
+    },
+    {
+      "seed": 1012,
+      "reached": true,
+      "final_error": 0.004985593870135028,
+      "time": 8.090000000000956,
+      "park_time": 6.440000000000485,
+      "reach_time": 8.090000000000956,
+      "stop_message": "Target reached within 5mm tolerance at t=8.09s!"
+    },
+    {
+      "seed": 1013,
+      "reached": false,
+      "final_error": 0.015259467498898194,
+      "time": 8.000000000001005,
+      "park_time": 2.2099999999998676,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0134 m, current 0.0153 m)"
+    },
+    {
+      "seed": 1014,
+      "reached": true,
+      "final_error": 0.004996497446367481,
+      "time": 10.22999999999977,
+      "park_time": 4.019999999999677,
+      "reach_time": 10.22999999999977,
+      "stop_message": "Target reached within 5mm tolerance at t=10.23s!"
+    },
+    {
+      "seed": 1015,
+      "reached": true,
+      "final_error": 0.0041979366003208375,
+      "time": 8.000000000001005,
+      "park_time": 1.3299999999999643,
+      "reach_time": 7.588000000000869,
+      "stop_message": "Target reached within 5mm tolerance at t=8.00s!"
+    },
+    {
+      "seed": 1016,
+      "reached": false,
+      "final_error": 0.016339912000085815,
+      "time": 9.125000000000382,
+      "park_time": 1.269999999999971,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=9.13s (best EE error 0.0069 m, current 0.0163 m)"
+    },
+    {
+      "seed": 1017,
+      "reached": false,
+      "final_error": 0.010401031448855458,
+      "time": 8.721000000000606,
+      "park_time": 2.7299999999998104,
+      "reach_time": 5.693000000000236,
+      "stop_message": "Target not reachable: closest pose reached at t=8.72s (best EE error 0.0046 m, current 0.0104 m)"
+    },
+    {
+      "seed": 1018,
+      "reached": false,
+      "final_error": 0.012306523412873903,
+      "time": 8.000000000001005,
+      "park_time": 0.6200000000000004,
+      "reach_time": 2.670999999999817,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0038 m, current 0.0123 m)"
+    },
+    {
+      "seed": 1019,
+      "reached": true,
+      "final_error": 0.004994075608656337,
+      "time": 8.340000000000817,
+      "park_time": 6.760000000000592,
+      "reach_time": 8.340000000000817,
+      "stop_message": "Target reached within 5mm tolerance at t=8.34s!"
+    },
+    {
+      "seed": 1020,
+      "reached": false,
+      "final_error": 0.012042677909393035,
+      "time": 9.92099999999994,
+      "park_time": 4.889999999999968,
+      "reach_time": 6.757000000000591,
+      "stop_message": "Target not reachable: closest pose reached at t=9.92s (best EE error 0.0015 m, current 0.0120 m)"
+    },
+    {
+      "seed": 1021,
+      "reached": false,
+      "final_error": 0.01275593462579336,
+      "time": 13.448999999997985,
+      "park_time": 6.340000000000452,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=13.45s (best EE error 0.0052 m, current 0.0128 m)"
+    },
+    {
+      "seed": 1022,
+      "reached": false,
+      "final_error": 0.03748484909351888,
+      "time": 8.258000000000862,
+      "park_time": 2.779999999999805,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=8.26s (best EE error 0.0103 m, current 0.0375 m)"
+    },
+    {
+      "seed": 1023,
+      "reached": false,
+      "final_error": 0.017355978883183392,
+      "time": 8.000000000001005,
+      "park_time": 0.6100000000000004,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0084 m, current 0.0174 m)"
+    },
+    {
+      "seed": 1024,
+      "reached": false,
+      "final_error": 0.008423673467672442,
+      "time": 10.24599999999976,
+      "park_time": 3.169999999999762,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=10.25s (best EE error 0.0078 m, current 0.0084 m)"
+    },
+    {
+      "seed": 1025,
+      "reached": false,
+      "final_error": 0.032516768517577205,
+      "time": 8.179000000000906,
+      "park_time": 2.6299999999998214,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=8.18s (best EE error 0.0100 m, current 0.0325 m)"
+    },
+    {
+      "seed": 1026,
+      "reached": false,
+      "final_error": 0.009583062852272216,
+      "time": 8.000000000001005,
+      "park_time": 0.04000000000000003,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0080 m, current 0.0096 m)"
+    },
+    {
+      "seed": 1027,
+      "reached": true,
+      "final_error": 0.004993922508651088,
+      "time": 10.996999999999344,
+      "park_time": 4.719999999999911,
+      "reach_time": 10.996999999999344,
+      "stop_message": "Target reached within 5mm tolerance at t=11.00s!"
+    },
+    {
+      "seed": 1028,
+      "reached": false,
+      "final_error": 0.02780023223790398,
+      "time": 8.000000000001005,
+      "park_time": 0.6800000000000005,
+      "reach_time": 2.2589999999998622,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0061 m, current 0.0278 m)"
+    },
+    {
+      "seed": 1029,
+      "reached": true,
+      "final_error": 0.004998549830768469,
+      "time": 9.058000000000419,
+      "park_time": 6.970000000000662,
+      "reach_time": 9.058000000000419,
+      "stop_message": "Target reached within 5mm tolerance at t=9.06s!"
+    },
+    {
+      "seed": 1030,
+      "reached": true,
+      "final_error": 0.0049884184706180685,
+      "time": 10.633999999999546,
+      "park_time": 4.659999999999891,
+      "reach_time": 10.633999999999546,
+      "stop_message": "Target reached within 5mm tolerance at t=10.63s!"
+    },
+    {
+      "seed": 1031,
+      "reached": false,
+      "final_error": 0.026722959316867204,
+      "time": 8.000000000001005,
+      "park_time": 1.45999999999995,
+      "reach_time": 2.978999999999783,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0051 m, current 0.0267 m)"
+    },
+    {
+      "seed": 1032,
+      "reached": false,
+      "final_error": 0.011958594930884792,
+      "time": 10.819999999999443,
+      "park_time": 2.849999999999797,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=10.82s (best EE error 0.0088 m, current 0.0120 m)"
+    },
+    {
+      "seed": 1033,
+      "reached": true,
+      "final_error": 0.004997633242375408,
+      "time": 8.522000000000716,
+      "park_time": 4.149999999999721,
+      "reach_time": 6.013000000000343,
+      "stop_message": "Target reached within 5mm tolerance at t=8.52s!"
+    },
+    {
+      "seed": 1034,
+      "reached": false,
+      "final_error": 0.023995292073058706,
+      "time": 8.000000000001005,
+      "park_time": 2.949999999999786,
+      "reach_time": 4.6169999999998765,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0049 m, current 0.0240 m)"
+    },
+    {
+      "seed": 1035,
+      "reached": false,
+      "final_error": 0.013486154679180969,
+      "time": 8.000000000001005,
+      "park_time": 2.54999999999983,
+      "reach_time": 4.524999999999846,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0046 m, current 0.0135 m)"
+    },
+    {
+      "seed": 1036,
+      "reached": false,
+      "final_error": 0.005690060094599088,
+      "time": 8.000000000001005,
+      "park_time": 1.9299999999998982,
+      "reach_time": 3.6809999999997056,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0044 m, current 0.0057 m)"
+    },
+    {
+      "seed": 1037,
+      "reached": true,
+      "final_error": 0.004996100320315441,
+      "time": 12.363999999998587,
+      "park_time": 6.220000000000412,
+      "reach_time": 12.363999999998587,
+      "stop_message": "Target reached within 5mm tolerance at t=12.36s!"
+    },
+    {
+      "seed": 1038,
+      "reached": false,
+      "final_error": 0.006912283842313189,
+      "time": 8.75100000000059,
+      "park_time": 3.759999999999697,
+      "reach_time": 5.634000000000216,
+      "stop_message": "Target not reachable: closest pose reached at t=8.75s (best EE error 0.0031 m, current 0.0069 m)"
+    },
+    {
+      "seed": 1039,
+      "reached": false,
+      "final_error": 0.011442980918218024,
+      "time": 8.127000000000935,
+      "park_time": 2.4099999999998456,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=8.13s (best EE error 0.0076 m, current 0.0114 m)"
+    },
+    {
+      "seed": 1040,
+      "reached": false,
+      "final_error": 0.012611145594477288,
+      "time": 9.496000000000176,
+      "park_time": 4.419999999999811,
+      "reach_time": 6.2370000000004175,
+      "stop_message": "Target not reachable: closest pose reached at t=9.50s (best EE error 0.0017 m, current 0.0126 m)"
+    },
+    {
+      "seed": 1041,
+      "reached": false,
+      "final_error": 0.012310052876357143,
+      "time": 10.020999999999885,
+      "park_time": 3.9799999999996727,
+      "reach_time": 6.944000000000654,
+      "stop_message": "Target not reachable: closest pose reached at t=10.02s (best EE error 0.0044 m, current 0.0123 m)"
+    },
+    {
+      "seed": 1042,
+      "reached": true,
+      "final_error": 0.004404993056833937,
+      "time": 8.000000000001005,
+      "park_time": 2.36999999999985,
+      "reach_time": 5.0090000000000074,
+      "stop_message": "Target reached within 5mm tolerance at t=8.00s!"
+    },
+    {
+      "seed": 1043,
+      "reached": true,
+      "final_error": 0.004993902164334952,
+      "time": 8.48000000000074,
+      "park_time": 5.440000000000151,
+      "reach_time": 8.48000000000074,
+      "stop_message": "Target reached within 5mm tolerance at t=8.48s!"
+    },
+    {
+      "seed": 1044,
+      "reached": false,
+      "final_error": 0.04912853669873059,
+      "time": 9.701000000000063,
+      "park_time": 4.259999999999757,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=9.70s (best EE error 0.0122 m, current 0.0491 m)"
+    },
+    {
+      "seed": 1045,
+      "reached": false,
+      "final_error": 0.011566351324202936,
+      "time": 9.800000000000008,
+      "park_time": 4.759999999999924,
+      "reach_time": 6.669000000000562,
+      "stop_message": "Target not reachable: closest pose reached at t=9.80s (best EE error 0.0022 m, current 0.0116 m)"
+    },
+    {
+      "seed": 1046,
+      "reached": false,
+      "final_error": 0.010774654987964065,
+      "time": 10.592999999999568,
+      "park_time": 5.490000000000168,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=10.59s (best EE error 0.0095 m, current 0.0108 m)"
+    },
+    {
+      "seed": 1047,
+      "reached": false,
+      "final_error": 0.014890639806867308,
+      "time": 8.000000000001005,
+      "park_time": 1.649999999999929,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0065 m, current 0.0149 m)"
+    },
+    {
+      "seed": 1048,
+      "reached": true,
+      "final_error": 0.004997184369796561,
+      "time": 11.179999999999243,
+      "park_time": 4.949999999999988,
+      "reach_time": 11.179999999999243,
+      "stop_message": "Target reached within 5mm tolerance at t=11.18s!"
+    },
+    {
+      "seed": 1049,
+      "reached": true,
+      "final_error": 0.004982722745520199,
+      "time": 8.961000000000473,
+      "park_time": 7.060000000000692,
+      "reach_time": 8.961000000000473,
+      "stop_message": "Target reached within 5mm tolerance at t=8.96s!"
+    },
+    {
+      "seed": 1050,
+      "reached": false,
+      "final_error": 0.009063551805784843,
+      "time": 8.000000000001005,
+      "park_time": 2.3399999999998533,
+      "reach_time": 3.9999999999996705,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0022 m, current 0.0091 m)"
+    },
+    {
+      "seed": 1051,
+      "reached": true,
+      "final_error": 0.0049986263968961695,
+      "time": 8.28200000000085,
+      "park_time": 4.949999999999988,
+      "reach_time": 8.28200000000085,
+      "stop_message": "Target reached within 5mm tolerance at t=8.28s!"
+    },
+    {
+      "seed": 1052,
+      "reached": false,
+      "final_error": 0.056194248245753475,
+      "time": 9.59900000000012,
+      "park_time": 4.139999999999717,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=9.60s (best EE error 0.0123 m, current 0.0562 m)"
+    },
+    {
+      "seed": 1053,
+      "reached": false,
+      "final_error": 0.016518759677166733,
+      "time": 12.46599999999853,
+      "park_time": 5.280000000000098,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=12.47s (best EE error 0.0096 m, current 0.0165 m)"
+    },
+    {
+      "seed": 1054,
+      "reached": false,
+      "final_error": 0.013913052611462369,
+      "time": 8.156000000000919,
+      "park_time": 2.649999999999819,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=8.16s (best EE error 0.0086 m, current 0.0139 m)"
+    },
+    {
+      "seed": 1055,
+      "reached": true,
+      "final_error": 0.0020168723618758794,
+      "time": 8.000000000001005,
+      "park_time": 5.900000000000305,
+      "reach_time": 7.630000000000883,
+      "stop_message": "Target reached within 5mm tolerance at t=8.00s!"
+    },
+    {
+      "seed": 1056,
+      "reached": true,
+      "final_error": 0.004050624386928464,
+      "time": 8.000000000001005,
+      "park_time": 3.259999999999752,
+      "reach_time": 5.515000000000176,
+      "stop_message": "Target reached within 5mm tolerance at t=8.00s!"
+    },
+    {
+      "seed": 1057,
+      "reached": false,
+      "final_error": 0.009503511553223917,
+      "time": 9.445000000000205,
+      "park_time": 4.839999999999951,
+      "reach_time": 6.325000000000447,
+      "stop_message": "Target not reachable: closest pose reached at t=9.45s (best EE error 0.0017 m, current 0.0095 m)"
+    },
+    {
+      "seed": 1058,
+      "reached": true,
+      "final_error": 0.004007506567650643,
+      "time": 8.000000000001005,
+      "park_time": 3.2199999999997564,
+      "reach_time": 5.468000000000161,
+      "stop_message": "Target reached within 5mm tolerance at t=8.00s!"
+    },
+    {
+      "seed": 1059,
+      "reached": false,
+      "final_error": 0.015020246796822593,
+      "time": 9.069000000000413,
+      "park_time": 4.169999999999727,
+      "reach_time": 6.09500000000037,
+      "stop_message": "Target not reachable: closest pose reached at t=9.07s (best EE error 0.0054 m, current 0.0150 m)"
+    },
+    {
+      "seed": 1060,
+      "reached": false,
+      "final_error": 0.012482170425936849,
+      "time": 9.48900000000018,
+      "park_time": 4.449999999999821,
+      "reach_time": 6.331000000000449,
+      "stop_message": "Target not reachable: closest pose reached at t=9.49s (best EE error 0.0020 m, current 0.0125 m)"
+    },
+    {
+      "seed": 1061,
+      "reached": false,
+      "final_error": 0.014450096229623358,
+      "time": 10.076999999999854,
+      "park_time": 4.979999999999998,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=10.08s (best EE error 0.0060 m, current 0.0145 m)"
+    },
+    {
+      "seed": 1062,
+      "reached": true,
+      "final_error": 0.0049962151320587945,
+      "time": 9.630000000000102,
+      "park_time": 6.520000000000512,
+      "reach_time": 9.630000000000102,
+      "stop_message": "Target reached within 5mm tolerance at t=9.63s!"
+    },
+    {
+      "seed": 1063,
+      "reached": true,
+      "final_error": 0.004993195868794224,
+      "time": 10.559999999999587,
+      "park_time": 4.259999999999757,
+      "reach_time": 10.559999999999587,
+      "stop_message": "Target reached within 5mm tolerance at t=10.56s!"
+    },
+    {
+      "seed": 1064,
+      "reached": false,
+      "final_error": 0.010512899988179742,
+      "time": 8.200000000000895,
+      "park_time": 3.0999999999997696,
+      "reach_time": 5.320000000000111,
+      "stop_message": "Target not reachable: closest pose reached at t=8.20s (best EE error 0.0065 m, current 0.0105 m)"
+    },
+    {
+      "seed": 1065,
+      "reached": true,
+      "final_error": 0.004995528782315464,
+      "time": 9.321000000000273,
+      "park_time": 7.2400000000007525,
+      "reach_time": 9.321000000000273,
+      "stop_message": "Target reached within 5mm tolerance at t=9.32s!"
+    },
+    {
+      "seed": 1066,
+      "reached": false,
+      "final_error": 0.005171326595346498,
+      "time": 8.944000000000482,
+      "park_time": 1.559999999999939,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=8.94s (best EE error 0.0060 m, current 0.0052 m)"
+    },
+    {
+      "seed": 1067,
+      "reached": false,
+      "final_error": 0.009964599252792434,
+      "time": 12.301999999998621,
+      "park_time": 3.63999999999971,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=12.30s (best EE error 0.0077 m, current 0.0100 m)"
+    },
+    {
+      "seed": 1068,
+      "reached": false,
+      "final_error": 0.013088696263032232,
+      "time": 9.931999999999935,
+      "park_time": 4.819999999999944,
+      "reach_time": 7.000000000000672,
+      "stop_message": "Target not reachable: closest pose reached at t=9.93s (best EE error 0.0062 m, current 0.0131 m)"
+    },
+    {
+      "seed": 1069,
+      "reached": false,
+      "final_error": 0.06356214185337139,
+      "time": 8.000000000001005,
+      "park_time": 1.8699999999999048,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0078 m, current 0.0636 m)"
+    },
+    {
+      "seed": 1070,
+      "reached": true,
+      "final_error": 0.004618685993287306,
+      "time": 8.000000000001005,
+      "park_time": 3.079999999999772,
+      "reach_time": 5.010000000000008,
+      "stop_message": "Target reached within 5mm tolerance at t=8.00s!"
+    },
+    {
+      "seed": 1071,
+      "reached": false,
+      "final_error": 0.005339371513317606,
+      "time": 8.000000000001005,
+      "park_time": 1.9699999999998938,
+      "reach_time": 3.9549999999996754,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0022 m, current 0.0053 m)"
+    },
+    {
+      "seed": 1072,
+      "reached": false,
+      "final_error": 0.012072452168468464,
+      "time": 9.871999999999968,
+      "park_time": 4.769999999999928,
+      "reach_time": 6.75400000000059,
+      "stop_message": "Target not reachable: closest pose reached at t=9.87s (best EE error 0.0030 m, current 0.0121 m)"
+    },
+    {
+      "seed": 1073,
+      "reached": false,
+      "final_error": 0.00884570185215674,
+      "time": 9.203000000000339,
+      "park_time": 4.5599999999998575,
+      "reach_time": 6.1470000000003875,
+      "stop_message": "Target not reachable: closest pose reached at t=9.20s (best EE error 0.0036 m, current 0.0088 m)"
+    },
+    {
+      "seed": 1074,
+      "reached": false,
+      "final_error": 0.022800460512354893,
+      "time": 8.000000000001005,
+      "park_time": 2.0299999999998875,
+      "reach_time": 3.6439999999997097,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0025 m, current 0.0228 m)"
+    },
+    {
+      "seed": 1075,
+      "reached": false,
+      "final_error": 0.007811381281541496,
+      "time": 8.000000000001005,
+      "park_time": 3.0999999999997696,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0082 m, current 0.0078 m)"
+    },
+    {
+      "seed": 1076,
+      "reached": true,
+      "final_error": 0.004990037552472019,
+      "time": 8.970000000000468,
+      "park_time": 3.1199999999997674,
+      "reach_time": 8.970000000000468,
+      "stop_message": "Target reached within 5mm tolerance at t=8.97s!"
+    },
+    {
+      "seed": 1077,
+      "reached": true,
+      "final_error": 0.003982599846662609,
+      "time": 8.000000000001005,
+      "park_time": 5.630000000000215,
+      "reach_time": 7.494000000000837,
+      "stop_message": "Target reached within 5mm tolerance at t=8.00s!"
+    },
+    {
+      "seed": 1078,
+      "reached": false,
+      "final_error": 0.022261107167397706,
+      "time": 9.48900000000018,
+      "park_time": 4.719999999999911,
+      "reach_time": 6.550000000000522,
+      "stop_message": "Target not reachable: closest pose reached at t=9.49s (best EE error 0.0056 m, current 0.0223 m)"
+    },
+    {
+      "seed": 1079,
+      "reached": false,
+      "final_error": 0.01087585756039318,
+      "time": 9.572000000000134,
+      "park_time": 4.489999999999834,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=9.57s (best EE error 0.0073 m, current 0.0109 m)"
+    },
+    {
+      "seed": 1080,
+      "reached": false,
+      "final_error": 0.015175067578238544,
+      "time": 9.961999999999918,
+      "park_time": 5.0300000000000145,
+      "reach_time": 6.825000000000614,
+      "stop_message": "Target not reachable: closest pose reached at t=9.96s (best EE error 0.0021 m, current 0.0152 m)"
+    },
+    {
+      "seed": 1081,
+      "reached": false,
+      "final_error": 0.006659090607052106,
+      "time": 9.214000000000333,
+      "park_time": 4.339999999999784,
+      "reach_time": 6.224000000000413,
+      "stop_message": "Target not reachable: closest pose reached at t=9.21s (best EE error 0.0052 m, current 0.0067 m)"
+    },
+    {
+      "seed": 1082,
+      "reached": false,
+      "final_error": 0.019091746906476782,
+      "time": 8.000000000001005,
+      "park_time": 1.7799999999999148,
+      "reach_time": 3.521999999999723,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0021 m, current 0.0191 m)"
+    },
+    {
+      "seed": 1083,
+      "reached": true,
+      "final_error": 0.003953914188455201,
+      "time": 8.000000000001005,
+      "park_time": 3.7999999999996925,
+      "reach_time": 5.696000000000237,
+      "stop_message": "Target reached within 5mm tolerance at t=8.00s!"
+    },
+    {
+      "seed": 1084,
+      "reached": false,
+      "final_error": 0.013638773779323096,
+      "time": 8.000000000001005,
+      "park_time": 2.7099999999998126,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0129 m, current 0.0136 m)"
+    },
+    {
+      "seed": 1085,
+      "reached": false,
+      "final_error": 0.011590174775995169,
+      "time": 8.000000000001005,
+      "park_time": 1.3099999999999665,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0086 m, current 0.0116 m)"
+    },
+    {
+      "seed": 1086,
+      "reached": true,
+      "final_error": 0.004991253970871563,
+      "time": 8.431000000000767,
+      "park_time": 6.560000000000525,
+      "reach_time": 8.431000000000767,
+      "stop_message": "Target reached within 5mm tolerance at t=8.43s!"
+    },
+    {
+      "seed": 1087,
+      "reached": true,
+      "final_error": 0.0049857856620573425,
+      "time": 8.094000000000953,
+      "park_time": 6.300000000000439,
+      "reach_time": 8.094000000000953,
+      "stop_message": "Target reached within 5mm tolerance at t=8.09s!"
+    },
+    {
+      "seed": 1088,
+      "reached": false,
+      "final_error": 0.006300958578413717,
+      "time": 8.000000000001005,
+      "park_time": 1.8799999999999037,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0063 m, current 0.0063 m)"
+    },
+    {
+      "seed": 1089,
+      "reached": false,
+      "final_error": 0.012972404427220701,
+      "time": 8.000000000001005,
+      "park_time": 0.9200000000000007,
+      "reach_time": 2.652999999999819,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0008 m, current 0.0130 m)"
+    },
+    {
+      "seed": 1090,
+      "reached": false,
+      "final_error": 0.01843727466595492,
+      "time": 12.585999999998464,
+      "park_time": 7.340000000000786,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=12.59s (best EE error 0.0087 m, current 0.0184 m)"
+    },
+    {
+      "seed": 1091,
+      "reached": false,
+      "final_error": 0.015144024054610726,
+      "time": 8.000000000001005,
+      "park_time": 2.0299999999998875,
+      "reach_time": 3.8479999999996872,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0016 m, current 0.0151 m)"
+    },
+    {
+      "seed": 1092,
+      "reached": false,
+      "final_error": 0.014815120702149784,
+      "time": 8.000000000001005,
+      "park_time": 3.169999999999762,
+      "reach_time": 4.713999999999909,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0033 m, current 0.0148 m)"
+    },
+    {
+      "seed": 1093,
+      "reached": false,
+      "final_error": 0.015324766830645644,
+      "time": 9.265000000000304,
+      "park_time": 4.039999999999684,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=9.27s (best EE error 0.0090 m, current 0.0153 m)"
+    },
+    {
+      "seed": 1094,
+      "reached": false,
+      "final_error": 0.01767637011848484,
+      "time": 8.000000000001005,
+      "park_time": 2.269999999999861,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0093 m, current 0.0177 m)"
+    },
+    {
+      "seed": 1095,
+      "reached": false,
+      "final_error": 0.010865641466228907,
+      "time": 8.000000000001005,
+      "park_time": 2.3399999999998533,
+      "reach_time": 3.9719999999996736,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0019 m, current 0.0109 m)"
+    },
+    {
+      "seed": 1096,
+      "reached": false,
+      "final_error": 0.01992208634793359,
+      "time": 9.665000000000083,
+      "park_time": 4.0899999999997005,
+      "reach_time": null,
+      "stop_message": "Target not reachable: closest pose reached at t=9.67s (best EE error 0.0073 m, current 0.0199 m)"
+    },
+    {
+      "seed": 1097,
+      "reached": true,
+      "final_error": 0.004984871556352501,
+      "time": 8.7320000000006,
+      "park_time": 7.250000000000756,
+      "reach_time": 8.7320000000006,
+      "stop_message": "Target reached within 5mm tolerance at t=8.73s!"
+    },
+    {
+      "seed": 1098,
+      "reached": false,
+      "final_error": 0.01384111064067616,
+      "time": 8.000000000001005,
+      "park_time": 2.6299999999998214,
+      "reach_time": 4.249999999999754,
+      "stop_message": "Target not reachable: closest pose reached at t=8.00s (best EE error 0.0037 m, current 0.0138 m)"
+    },
+    {
+      "seed": 1099,
+      "reached": true,
+      "final_error": 0.004982730713123696,
+      "time": 8.487000000000736,
+      "park_time": 3.1899999999997597,
+      "reach_time": 8.487000000000736,
+      "stop_message": "Target reached within 5mm tolerance at t=8.49s!"
+    }
+  ]
+}
